@@ -37,7 +37,7 @@ var string = "hey there";
 var newString = new String("hey there");
 
 console.log(string); // primitive
-console.log(newString); // shows up as an object
+console.log(newString); // shows up as an object.
 
 var myArray = ["this is the first", 4, "this is the third"];
 console.log(myArray.length); // will display how many things are in the array, in this case 3
