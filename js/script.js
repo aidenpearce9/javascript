@@ -1,39 +1,27 @@
-const bestNumber = 9;
+var array = []; // anything inside [] is an array
 
-var myString = "Hey I'm a string";
-var newString = new String("Hey I'm a string");
-console.log(myString === newString);
-console.log(typeof(myString));
-console.log(typeof(newString));
+var myArray = ["hey", 10, true, [], {}]; // all primitives can fit in an array, even another array
+console.log(myArray[1]); // will display 10, because arrays start at 0
 
-var number1 = 10;
-var number2 = 10;
-number1++; // ++ increments by 1
-number1--; // -- subtracts by 1
-console.log(number1); // gives back 11
-console.log(number2); // gives back 9
+var newArray = ["inception", 9, true, 2015];
+console.log(newArray, newArray.length);
 
-if (number1 === 10) { // sets the condition
-  alert("it's ten!"); // runs if it is truthy
-} else {
-  alert("It's not ten!"); // runs if it is falsey
-}
+console.log(typeof(newArray));
+console.log(Array.isArray(newArray)); // checks if the object is an array and returns true or false
 
-var number1 = prompt("give a number between 1-20");
-switch (true) {
-  case (number1 < 10):
-    alert("It's less than ten!");
-    break;
-  case (number1 == 10):
-    alert("It's ten!");
-    break;
-  case (number1 > 20):
-    alert("That's too high!");
-    break;
-  case (number1 > 10):
-    alert("It's more than ten!");
-    break;
-  default:
-    alert("Try again!");
-    break;
-}
+
+var name = prompt("what's your name?");
+var age = prompt("Whats your age?");
+newArray.push(age); // puts the value at the end of an array
+newArray.unshift(name); // puts the value at the front of the array
+console.log(newArray);
+
+var removedItem = newArray.pop(); // removes the last item of the array
+console.log(removedItem);
+console.log(newArray);
+newArray.shift(); // removes the first item of the array
+console.log(newArray);
+newArray.splice(1/*index to start at*/, 0/*how many to remove*/, "new item" /*what replaces it/them*/); // splice removes items starting with the number given
+console.log(newArray);
+
+console.log(newArray.slice(0, 1));
