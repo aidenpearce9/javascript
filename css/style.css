@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 300px;
+  background-color: blue;
+  margin: 0 auto;
+  border: 2px black solid;
+  border-radius: 30px;
+}
+
+.inner-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  background-color: green;
+  border-radius: 30px;
+  width: 100px;
+}
